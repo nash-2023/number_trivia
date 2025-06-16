@@ -7,7 +7,6 @@ abstract class Failure extends Equatable {
   List<Object?> get props => [];
 }
 
-
 class ServerFailure extends Failure {
   // final String message;
 
@@ -18,7 +17,8 @@ class ServerFailure extends Failure {
 
   // @override
   // String toString() => 'ServerFailure: $message';
-} 
+}
+
 class CacheFailure extends Failure {
   // final String message;
 
@@ -29,7 +29,7 @@ class CacheFailure extends Failure {
 
   // @override
   // String toString() => 'CacheFailure: $message';
-} 
+}
 // class NetworkFailure extends Failure {
 //   final String message;
 
@@ -40,4 +40,16 @@ class CacheFailure extends Failure {
 
 //   @override
 //   String toString() => 'NetworkFailure: $message';
-// } 
+// }
+
+class InvalidInputFailure extends Failure {
+  // final String message;
+
+  // const InvalidInputFailure(this.message);
+
+  // @override
+  // List<Object?> get props => [message];
+
+  // @override
+  // String toString() => 'InvalidInputFailure: $message';
+}
