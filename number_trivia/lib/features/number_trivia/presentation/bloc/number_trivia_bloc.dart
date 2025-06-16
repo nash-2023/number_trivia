@@ -27,7 +27,6 @@ class NumberTriviaBloc extends Bloc<NumberTriviaEvent, NumberTriviaState> {
   });
 
   NumberTriviaState get initialState => Empty();
-  @override
   Stream<NumberTriviaState> mapEventToState(NumberTriviaEvent event) async* {
     if (event is GetTriviaForConcreteNumber) {
       final inputEither = converter.stringToUnsignedInteger(event.numberString);

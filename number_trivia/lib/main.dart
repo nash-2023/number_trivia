@@ -6,6 +6,10 @@ import 'package:number_trivia/features/number_trivia/data/repositories/number_tr
 import 'package:number_trivia/features/number_trivia/domain/usecases/get_random_number_trivia.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+
+
+
+
 void main() {
   runApp(const MyApp());
 }
